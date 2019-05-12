@@ -8,6 +8,24 @@ body {
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
 }
+@font-face {
+  font-family: 'Selima';
+  src: url('../fonts/selima.woff') format('woff');
+  font-weight: normal;
+  font-style: normal;
+}
+@font-face {
+  font-family: 'Glacial';
+  src: url('../fonts/glacial.woff') format('woff');
+  font-weight: normal;
+  font-style: normal;
+}
+@font-face {
+  font-family: 'Glacial-B';
+  src: url('../fonts/glacial-b.woff') format('woff');
+  font-weight: normal;
+  font-style: normal;
+}
 article,
 aside,
 details,
@@ -224,7 +242,7 @@ h1 {
   margin-left: 0;
   margin-right: 0;
   margin-top: 0;
-  padding-bottom: 0;
+  padding-bottom: .2rem;
   padding-left: 0;
   padding-right: 0;
   padding-top: 0;
@@ -234,7 +252,7 @@ h1 {
     Ubuntu, Cantarell, Fira Sans, Droid Sans, Helvetica Neue, sans-serif;
   font-weight: bold;
   text-rendering: optimizeLegibility;
-  font-size: 2.25rem;
+  font-size: 8rem;
   line-height: 1.1;
 }
 h2 {
