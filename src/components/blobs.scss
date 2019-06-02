@@ -1,8 +1,40 @@
 #blob {
-  float: right;
   height: 282px;
   position: absolute;
-  right: 20%;
-  top: -6%;
+  right: 18%;
+  top: 4%;
   transform: rotate(30deg);
+  -webkit-svg-shadow: 0 0 7px #53BE12;
+  opacity: .8;
+}
+
+#blobTwo {
+  position: absolute;
+  right: 16%;
+  top: 38%;
+  transform: rotate(-24deg);
+  -webkit-svg-shadow: 0 0 7px #53BE12;
+  opacity: .9;
+  path {
+    fill: #3C5947;
+  }
+}
+.blob-wrapper {
+  position: fixed;
+  top: 2%;
+  right: 16%;
+  height: 100%;
+  z-index: 10;
+}
+.flower {
+  background-image: url('../images/baby-breath.png');
+  background-repeat: no-repeat;
+  background-size: contain;
+  background-position: left;
+  height: 200px;
+  width: 200px;
+  position: absolute;
+  top: 18%;
+  right: 32%;
+  transform: rotate(-24deg);
 }

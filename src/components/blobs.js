@@ -3,7 +3,7 @@ import './blobs.scss';
 
 const blobs = (props) => {
   return (
-  	<div>
+  	<div className={'blob-wrapper'}>
 	    <svg id={"blob"} width="446px" height="733px" viewBox="0 0 846 733" version="1.1">
 		    <defs></defs>
 		    <g id="Main" stroke="none" stroke-width="1" fill="none" fillRule="evenodd">
@@ -12,7 +12,10 @@ const blobs = (props) => {
 		        </g>
 		    </g>
 		</svg>
-		<svg version="1.1" x="0px" y="0px" width="3230.5px" height="1942.1px" viewBox="0 0 3230.5 1942.1">
+		<div className={"flower"}>
+			
+		</div>
+		<svg id={"blobTwo"} version="1.1" x="0px" y="0px" width="400.5px" height="242.1px" viewBox="0 0 3230.5 1942.1">
 			<path class="st0" d="M3153.4,668.6c-42.4-129.8-127.4-320.7-188.7-424.1c-61.3-103.4-270.9-209.3-465.6-235.4s-492.1,5.8-660.8,70.7
 			S1420.4,264,1284.6,345S941.8,518.7,824.8,551.2s-294.7,77.4-394.9,99.9S192,761.1,123.9,845.6S0,1078.9,0,1176.3
 			c0,97.4,31.8,240.6,70.7,318.4s144.8,170.5,235.4,206.2c90.6,35.7,260.4,80.6,377.4,99.9c117,19.3,329.4,58.9,472.1,88.2

@@ -24,14 +24,8 @@ const Layout = ({ children }) => (
     `}
     render={data => (
       <>
-        <div style={{display: 'flex', alignItems: 'center', minHeight: `100vh`, flexWrap:  `wrap`}}
-        >
+        <div>
           <main>{children}</main>
-          <footer>
-            © {new Date().getFullYear()}, Built with
-            {` `}
-            <a href="https://www.gatsbyjs.org">Gatsby</a>
-          </footer>
         </div>
       </>
     )}
