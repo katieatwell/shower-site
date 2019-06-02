@@ -1,7 +1,7 @@
 import { render } from 'react-dom'
 import React, { useState, useCallback } from 'react'
 import { useTransition, animated } from 'react-spring'
-import Blobs from './Blobs';
+import Blobs from './blobs';
 import './wrapper.scss'
 import './map.scss'
 
