@@ -48,8 +48,7 @@ const FullpageWrapper = fullpageProps => (
       					Berkshire Dilworth Apartments <br/>
       					1440 Harding Place Charlotte, 28204 <br/>
                 <br/>
-                  <h2>where to park:</h2>
-                  <br/>
+                  <h2>Where to Park</h2>
                   <p>
                     Please park at <a className={'small'} href={'https://www.google.com/maps/place/920+Monticello+Terrace,+Charlotte,+NC+28204/data=!4m2!3m1!1s0x88569f8e01f72421:0x5e51ad04bcbb4c6a?sa=X&ved=2ahUKEwiB34XZtuLiAhUIWK0KHUqkB7kQ8gEwAHoECAoQAQ'} target={'_blank'}>920 Monticello Terrace Charlotte, NC 28204.</a>
                     This address will take you to a parking lot directly behind Berkshire Dilworth Apartments. 
@@ -80,7 +79,7 @@ const FullpageWrapper = fullpageProps => (
                 </div>
                 <div>
                   <h2>
-                    Building a library for Baby Gavin
+                    Building a Library for Baby Gavin
                   </h2>
                   <p>
                     We request that instead of bringing a card, 
