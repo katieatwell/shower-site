@@ -42,7 +42,7 @@ class Form extends React.Component {
       form = (<div><p>{"Thank you for submitting an rsvp to our event! Please don't hesitate to reach out with any questions!"}</p></div>)
     } else {
       form = (
-          <form onSubmit={this.handleForm}>
+          <form onSubmit={this.handleForm} netlify>
             <label htmlFor="name">Name</label>
             <input type="text" id="name" name="name" onChange={this.handleFields} />
 
