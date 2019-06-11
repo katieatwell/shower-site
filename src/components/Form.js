@@ -3,7 +3,8 @@ import axios from "axios"; // For making client request.
 
 
 class Form extends React.Component {
-  constructor(props){
+
+  constructor(props) {
     super(props);
     this.state = {
       name: "", 
@@ -13,30 +14,34 @@ class Form extends React.Component {
       success: "",
     };
   }
+
   handleForm = e => {
     axios.post(
       "https://formcarry.com/s/SZkSGhCm3Ol", 
       this.state, 
-      {headers: {"Accept": "application/json"}}
+      {headers: {"Accept": "application/json", "Content-Type": "application/json"}}
       )
       .then(function (response) {
         console.log(response);
-        return this.setState({success: response});
-      })
-      .catch(function (error) {
+        return response;
+      }).catch(function (error) {
         console.log(error);
-      });
-    e.preventDefault();
+      }).then((response) => {
+        this.clearFields(response);
+      })
+    e.preventDefault()
   }
 
-
+  clearFields = (response) => this.setState({success: response.status}, () => console.log(this.state.success))
   handleFields = e => this.setState({ [e.target.name]: e.target.value });
 
   render() {
-    let { success } = this.state;
-    let formContents;
-    if (success != '200') {
-      formContents = (
+    let {success} = this.state;
+    let form;
+    if (success === 200) {
+      form = (<div><p>{"Thank you for submitting an rsvp to our event! Please don't hesitate to reach out with any questions!"}</p></div>)
+    } else {
+      form = (
           <form onSubmit={this.handleForm}>
             <label htmlFor="name">Name</label>
             <input type="text" id="name" name="name" onChange={this.handleFields} />
@@ -51,15 +56,13 @@ class Form extends React.Component {
             <label htmlFor="message">Your Message</label>
             <textarea name="message" id="message" onChange={this.handleFields}></textarea>
 
-            <button type="submit" >Send</button>
+            <button type="submit">Send</button>
           </form>
         )
-    } else {
-      formContents = (<div>Your RSVP has been successfully submitted!</div>)
     }
     return (
       <div className={'form'}>
-        {formContents}
+        {form}
       </div>
     
     );

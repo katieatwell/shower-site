@@ -17,8 +17,6 @@ const FullpageWrapper = fullpageProps => (
   <ReactFullpage
     {...fullpageOptions}
     render={({ state, fullpageApi }) => {
-      console.log('render prop change', state) // eslint-disable-line no-console
-
       if (state.callback === 'onLeave') {
         if (state.direction === 'down') { 
           console.log('going down...' + state.origin.index)
@@ -83,12 +81,13 @@ const FullpageWrapper = fullpageProps => (
                 </div>
                 <div>
                   <h2>
-                    Books for Baby Gavin
+                    Building a library for Baby Gavin
                   </h2>
                   <p>
-                    One small request that we hope isn't hard, please bring a book instead of a card.
-                    Your book will be cherised whether well-loved or new. And each time it's read, Gavin will be
-                    reminded of you. ❤
+                    We request that instead of bringing a card, 
+                    you bring a book for baby Gavin. 
+                    A book is a great way to say everything you 
+                    would say with a card and still give a lasting gift. ❤
                   </p>
                 </div>
               </div>
@@ -97,7 +96,7 @@ const FullpageWrapper = fullpageProps => (
           <div className="section secondary">
       			<div className={'flex center'}>
               <h1>
-                RSVP 
+                rsvp 
               </h1>
       				<Form/>
       			</div>
