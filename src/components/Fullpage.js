@@ -44,17 +44,16 @@ const FullpageWrapper = fullpageProps => (
                 <Map/>
               </div>
       				<div className={'content'}>
-      					<b>Sunday August 11, 2019</b> | <b>2:30pm</b> <br/>
+      					<h2>Sunday August 11, 2019 | 2:30pm </h2>
       					Berkshire Dilworth Apartments <br/>
       					1440 Harding Place Charlotte, 28204 <br/>
                 <br/>
-                  <b>where to park:</b>
+                  <h2>where to park:</h2>
                   <br/>
                   <p>
-                    Please park at <a className={'small'} href={'https://www.google.com/maps/place/Berkshire+Dilworth/@35.206975,-80.8374594,15z/data=!4m5!3m4!1s0x0:0x58e9162f0adaf047!8m2!3d35.206975!4d-80.8374594'} target={'_blank'}>920 Monticello Terrace Charlotte, NC 28204.</a>
-                    The event location is approximately one block from the event location.
-                    There will be balloons and signs to serve as directions to Berkshire Dilworth Apartments. 
-                    Please do not park in any diagonal spaces. Feel free to call with any questions!
+                    Please park at <a className={'small'} href={'https://www.google.com/maps/place/920+Monticello+Terrace,+Charlotte,+NC+28204/data=!4m2!3m1!1s0x88569f8e01f72421:0x5e51ad04bcbb4c6a?sa=X&ved=2ahUKEwiB34XZtuLiAhUIWK0KHUqkB7kQ8gEwAHoECAoQAQ'} target={'_blank'}>920 Monticello Terrace Charlotte, NC 28204.</a>
+                    This address will take you to a parking lot directly behind Berkshire Dilworth Apartments. 
+                    There will be balloons and signs indicating how to get from the parking lot to the apartment complex.
                   </p>
       				</div>
               
