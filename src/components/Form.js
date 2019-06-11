@@ -39,7 +39,9 @@ class Form extends React.Component {
     let {success} = this.state;
     let form;
     if (success === 200) {
-      form = (<div><p>{"Thank you for submitting an rsvp to our event! Please don't hesitate to reach out with any questions!"}</p></div>)
+      form = (<div>
+        <p>{"Thank you for submitting an rsvp to our event! Please don't hesitate to reach out with any questions!"}
+        </p><p>Kellyanna Atwell: <a className={'small'} href={"tel:704-414-0940"}>704-414-0940</a></p></div>)
     } else {
       form = (
           <form onSubmit={this.handleForm} netlify>
