@@ -76,7 +76,7 @@ const FullpageWrapper = fullpageProps => (
                     Registries 
                   </h2>
                   <p>
-                    Michelle is registered at <a href={''} target={'_blank'}>Amazon</a> and <a href={''} target={'_blank'}>Target</a>.
+                    Michelle is registered at <a href={'https://www.amazon.com/baby-reg/michelle-edwards-adam-bost-september-2019-stanley/K8RE5FUPDVJ9'} target={'_blank'}>Amazon</a> and <a href={'https://www.target.com/gift-registry/gift/7eac8060f9e84e289f2e0d2851a40864'} target={'_blank'}>Target</a>.
                   </p>
                 </div>
                 <div>
