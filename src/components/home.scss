@@ -61,7 +61,7 @@
       }
     }
   }
-  a {
+  a:not(.small) {
     font-size: 32px;
     font-weight: 900;
     text-decoration: underline;

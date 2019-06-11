@@ -51,7 +51,7 @@ const FullpageWrapper = fullpageProps => (
                   <b>where to park:</b>
                   <br/>
                   <p>
-                    Please park at 920 Monticello Terrace Charlotte, NC 28204.
+                    Please park at <a className={'small'} href={'https://www.google.com/maps/place/Berkshire+Dilworth/@35.206975,-80.8374594,15z/data=!4m5!3m4!1s0x0:0x58e9162f0adaf047!8m2!3d35.206975!4d-80.8374594'} target={'_blank'}>920 Monticello Terrace Charlotte, NC 28204.</a>
                     The event location is approximately one block from the event location.
                     There will be balloons and signs to serve as directions to Berkshire Dilworth Apartments. 
                     Please do not park in any diagonal spaces. Feel free to call with any questions!
