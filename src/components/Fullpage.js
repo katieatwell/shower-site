@@ -30,10 +30,10 @@ const FullpageWrapper = fullpageProps => (
             <div className='overlay'></div>
           	<div className={'frosted'}>
       				<h1>
-      					<span>
-      						in celebration of<br/> Michelle Atwell
-      					</span>
       					baby shower!
+                <span>
+                  in celebration of<br/> Michelle Atwell
+                </span>
       				</h1>
       			</div>
           </div>
@@ -45,33 +45,60 @@ const FullpageWrapper = fullpageProps => (
               <div className="maps">
                 <Map/>
               </div>
-      				<p>
+      				<div className={'content'}>
       					<b>Sunday August 11, 2019</b> | <b>2:30pm</b> <br/>
       					Berkshire Dilworth Apartments <br/>
       					1440 Harding Place Charlotte, 28204 <br/>
                 <br/>
-                  <b>Parking Instructions:</b>
+                  <b>where to park:</b>
                   <br/>
-                  <div>
+                  <p>
                     Please park at 920 Monticello Terrace Charlotte, NC 28204.
                     The event location is approximately one block from the event location.
                     There will be balloons and signs to serve as directions to Berkshire Dilworth Apartments. 
-                    Please do not hesitate to call with any questions.
-                  </div>
-      				</p>
+                    Please do not park in any diagonal spaces. Feel free to call with any questions!
+                  </p>
+      				</div>
               
 			     </div>
           </div>
           <div className="section secondary">
-          	<div>
-      				Registries
-      			</div>
-      			<div>
-      				Special Requests
+          	<div className={'flex'}>
+      				<h1>details</h1>
+              <div className={'flex2'}>
+                <div>
+                  <h2>
+                    Diaper Raffle
+                  </h2>
+                  <p>
+                    Please bring a package of diapers if you wish to participate 
+                    in our diaper raffle for the chance to win prizes.
+                  </p>
+                  <h2 style={{marginTop: '2rem'}}>
+                    Registries 
+                  </h2>
+                  <p>
+                    Michelle is registered at <a href={''} target={'_blank'}>Amazon</a> and <a href={''} target={'_blank'}>Target</a>.
+                  </p>
+                </div>
+                <div>
+                  <h2>
+                    Books for Baby Gavin
+                  </h2>
+                  <p>
+                    One small request that we hope isn't hard, please bring a book instead of a card.
+                    Your book will be cherised whether well-loved or new. And each time it's read, Gavin will be
+                    reminded of you. ❤
+                  </p>
+                </div>
+              </div>
       			</div>
           </div>
           <div className="section secondary">
-      			<div className={'flex'}>
+      			<div className={'flex center'}>
+              <h1>
+                RSVP 
+              </h1>
       				<Form/>
       			</div>
           </div>

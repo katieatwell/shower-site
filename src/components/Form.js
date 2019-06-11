@@ -10,7 +10,7 @@ class Form extends React.Component {
       attending: "", 
       rsvp: "", 
       message: "", 
-      successfullySubmitted: false,
+      success: "",
     };
   }
   handleForm = e => {
@@ -21,37 +21,29 @@ class Form extends React.Component {
       )
       .then(function (response) {
         console.log(response);
-        formSuccess = response;
+        return this.setState({success: response});
       })
       .catch(function (error) {
         console.log(error);
       });
-
     e.preventDefault();
   }
 
-  successMessage = () => {
-    if (formSuccess === 200) {
-      this.setState({successfullySubmitted: true});
-    }
-  }
 
   handleFields = e => this.setState({ [e.target.name]: e.target.value });
 
   render() {
-    let { successfullySubmitted } = this.state;
+    let { success } = this.state;
     let formContents;
-    let formSuccess;
-
-    if (successfullySubmitted === false) {
+    if (success != '200') {
       formContents = (
           <form onSubmit={this.handleForm}>
             <label htmlFor="name">Name</label>
             <input type="text" id="name" name="name" onChange={this.handleFields} />
 
             <label htmlFor="attending">Will You Be Attending?</label>
-            <input type="radio" name="attending" value="yes" onChange={this.handleFields}/> Yes 🎉
-            <input type="radio" name="attending" value="no" onChange={this.handleFields}/> No
+            <input type="radio" name="attending" value="yes" onChange={this.handleFields}/> <span>Yes 🎉</span> <br/>
+            <input type="radio" name="attending" value="no" onChange={this.handleFields}/> <span>No </span>
 
             <label htmlFor="rsvp">How Many People Will You Bring?</label>
             <input type="number" id="rsvp" name='rsvp' onChange={this.handleFields}></input>
@@ -59,14 +51,14 @@ class Form extends React.Component {
             <label htmlFor="message">Your Message</label>
             <textarea name="message" id="message" onChange={this.handleFields}></textarea>
 
-            <button type="submit" onClick={this.successMessage}>Send</button>
+            <button type="submit" >Send</button>
           </form>
         )
     } else {
       formContents = (<div>Your RSVP has been successfully submitted!</div>)
     }
     return (
-      <div>
+      <div className={'form'}>
         {formContents}
       </div>
     
